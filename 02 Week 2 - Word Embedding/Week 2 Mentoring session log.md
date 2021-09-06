@@ -66,7 +66,10 @@
      - Interprete the results. (why one result is better than the other?)
      - Explain the intention for your architectur design.
      - **Deadline: 9th Thursday 11am**
-
+  - Figure out:
+    - the reason why they are not included, and
+    - how you can include them
+  - Additional task: visualise your work!
 
 
 **Week 2 timeline**
