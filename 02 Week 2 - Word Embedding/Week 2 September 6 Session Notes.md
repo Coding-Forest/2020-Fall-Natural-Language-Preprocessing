@@ -1,4 +1,4 @@
-### **Week 2 Mentoring session log** 
+### **Week 2 September 6 Session Notes** 
 
 #### **Supervised learning**
 
