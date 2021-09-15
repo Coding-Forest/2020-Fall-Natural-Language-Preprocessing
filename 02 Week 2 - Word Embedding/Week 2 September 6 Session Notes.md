@@ -1,78 +1,85 @@
-### **Week 2 September 6 Session Notes** 
+## Week 2 September 6 Monday Session Notes 
 
-#### **Supervised learning**
-
-- dataset must be labelled.
-
+- Supervised learning 
+  - Dataset must be labelled
 - Unsupervised learning
+  - Dimensionality reduction, clustering
+  - Dataset is unlabelled
 
-- Dimensionality reduction, clustering
-- Dataset is unlabelled
+- **Semi-supervised learning**
+  - Hibrid learning
+  - Used when labellings is incomplete
+  - Uses mixture of labelled and unlabelled dataset.
 
-#### Semi-supervised learning
+- **Reinforcement learning**
+  - Explores the ***reward***
+  - Frequently used in games
 
-- Hibrid learning
-- Used when labellings is incomplete
-- Uses mixture of labelled and unlabelled dataset.
+### **Loss function**
 
-#### Reinforcement learning
+Update weights through differentiation
 
-- Explores the reward
-- Frequently used in games
+### **Word Embedding**
 
-##### **Loss function ** 
+- Vectorise words (turn strings into numbers)
+- One-hot encoding
+- Transform representation (str -> int)
 
-###### - Update weights through differentiation Word Embedding
+## **Word2Vec**
 
-#### **Word Embedding**
+**Algorithms**
 
-- Vectorise words; transform representations (str -> int)
+- ```CBOW``` Continuous Bag Of Words
+- ```Skip-gram```
+- ```FastText```
+- ```SISG``` Sub-word Information Skip Gram
+- n-gram tokenisation
 
-  - One-hot encoding
+**Problems with word embedding**
 
-  - **Word2Vec**
-    - ```Word2Vec(datasets, vector_size= ?, workers=num_processes, sg=0(CBOW), window=(num_of_neighbours), min_count=(threshold to filter candidate words for embedding))```
-  - CBOW (Continuous)
-  - Skip-gram
-  - FastText
-  - SISG (Subword Information Skip Gram)
-    - n-gram tokenisation
+- Unknown words appear frequently.
+- Removing stop words.
 
-- **Problem with Word embedding**
-  - Unknown words frequently appear.
-  - Removing stop words.
-
-- **Switch Transformer** (Google's latest publication in January, 2021 )
+- Switch Transformer (Google's latest publication in January, 2021 )
 
 
 
-#### **Our week 2 task**
+---
 
-1. **Produce word embeddings**
 
-2. **Word similiarity analysis**
+
+## **Week 2 task**
+
+- Source code is provided.
+  - Wikipedia dump + mecab phoneme analysis
+  - ```Gensim Word2Vec```
+
+1) Pre-processing should be consistent
+   - ```Fasttext```, ```GloVe```, ```Swivel```
+
+2. Produce word embeddings
+3. Word similiarity analysis
    - Loop through the process until the analysis improves.
-   - Source code is provided.
-   - Wikipedia dump + mecab phoneme analysis
-   - ```Gensim, Word2Vec```
+4. Report
+   - Explain the intention for your architecture design.
+   - Include all your n results.
+   - Interpret the results. (why a specific result is better than the rest?)
 
-- Pre-processing should be performed under consistent policy
+**Timeline**
 
-- Additional libraries: ```Fasttext, GloVe, Swivel```
-
-3. **Submit a report, which should include:**
-   - Team discussion
-     - Include all your n results.
-     - Interprete the results. (why one result is better than the other?)
-     - Explain the intention for your architectur design.
-     - **Deadline: 9th Thursday 11am**
-    - Figure out:
-      - the reason why they are not included, and
-      - how you can include them
-    - Additional task: visualise your work!
+- Deadline: 9th Thursday 11am
+- Thursday 9th, 2pm Report and feedback session
+- Friday 10th, 4pm Final report.
 
 
-**Week 2 timeline**
 
-- **Thursday 9th, 2pm Report** and feedback session
-- **Friday 10th, 4pm Final report**
+**Challenges**
+
+- ```Word2Vec(datasets, vector_size= ?, workers=num_processes, sg=0(CBOW), window=(num_of_neighbours), min_count=(threshold to filter candidate words for embedding))```
+
+- Solve the problem of words not present in the word embedding
+  - Figure out:
+    - The reason why they are not included, and
+    - how you can include them
+
+- Additional task: visualise your work!
